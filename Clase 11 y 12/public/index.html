@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación con Sockets</title>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+        integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+</head>
+
+<body>
+    <!-- formulario -->
+    <div>
+        <h1> Informacion del producto</h1>
+        <form id="formProducts">
+            <input type="text" id="name" name="name" />
+            <input type="number" id="price" name="price" />
+            <input type="text" id="image" name="image" />
+            <input type="button" id="sumbit" value="Sumbit" />
+        </form>
+    </div>
+
+    <!-- tabla dinamica -->
+
+    <h1>Lista de productos</h1>
+    <div id="products"></div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
